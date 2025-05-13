@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Start SSH
 service ssh start
 
 # Ensure MariaDB socket directory exists
@@ -13,5 +12,4 @@ service apache2 start
 # Start MariaDB safely
 service mariadb start
 
-# Keep container running for SSH access
 exec /usr/sbin/sshd -D
